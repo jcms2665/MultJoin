@@ -1,0 +1,11 @@
+Package: MultJoin
+Title: Manipulate several databases at the same time
+Version: 0.0.0.9000
+Authors@R: person("Julio", "Martinez", email = "jcms2665@example.com", role = c("aut", "cre"))
+Description: The Aim of this project is to manipulate several databases at the same time.
+Depends: R (>= 3.1.3)
+License: MIT
+LazyData: true
+Imports: data.table,
+    foreign,
+    dplyr
