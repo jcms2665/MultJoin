@@ -18,10 +18,8 @@ ENOEString<-function(base1,base2,base3,base4,base5,u){
     h$C_RES<-as.numeric(as.character(h$C_RES))
     #h$CLASE2<-as.numeric(as.character(h$CLASE2))
     h$N_ENT<-as.numeric(as.character(h$N_ENT))
-    
     h<-subset(h,h$SEX==2 & h$N_ENT==r & (h$R_DEF==0 & (h$C_RES==1 | h$C_RES==3)),select = c(k,u))
     names(h)<-c(k,paste(u,r,sep=""))
-
     base1<-merge(base1,h,by=k, all.x = TRUE)
     assign("BaseGral",base1,envir = .GlobalEnv)
     #assign(paste("temp",r,sep=""), h,envir = .GlobalEnv)
